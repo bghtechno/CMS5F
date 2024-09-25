@@ -2,7 +2,7 @@
 <main>
 <section class="hero">
 <h1>Selamat datang di Universitas Trunojoyo Madura</h1>
-<p>Informasi terbaru, agenda, dan berita,</p>
+<p>Universitas Trunojoyo Madura (UTM) adalah sebuah perguruan tinggi negeri yang terletak di Kabupaten Bangkalan, Pulau Madura, Provinsi Jawa Timur, Indonesia. UTM didirikan pada tahun 2001, dengan visi menjadi universitas unggul di bidang pengembangan ilmu pengetahuan, teknologi, dan seni yang berbasis kearifan lokal.</p>
 </section>
 <section class="news">
 <h2>Berita Terbaru</h2>

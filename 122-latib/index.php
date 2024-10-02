@@ -1,42 +1,15 @@
+```php
 <?php get_header(); ?>
-
+<div class="content-area">
 <main>
-
-    <!-- Section Hero -->
-    <section class="hero">
-        <h1>Selamat datang di Universitas Gadjah Mada</h1>
-        <p>Informasi terbaru, agenda, dan berita.</p>
-    </section>
-
-    <!-- Section Berita Terbaru -->
-    <section class="news">
-        <h2>Berita Terbaru</h2>
-
-        <?php if ( have_posts() ) : ?>
-            <?php while ( have_posts() ) : the_post(); ?>
-                <article>
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                    <p><?php the_excerpt(); ?></p>
-                </article>
-            <?php endwhile; ?>
-            
-            <!-- Pagination (opsional jika diperlukan) -->
-            <div class="pagination">
-                <?php
-                    the_posts_pagination( array(
-                        'mid_size' => 2,
-                        'prev_text' => __( 'Sebelumnya', 'textdomain' ),
-                        'next_text' => __( 'Berikutnya', 'textdomain' ),
-                    ) );
-                ?>
-            </div>
-
-        <?php else : ?>
-            <p>Belum ada berita terbaru.</p>
-        <?php endif; ?>
-
-    </section>
-
+<?php
+if ( have_posts() ) :
+while ( have_posts() ) : the_post();
+get_template_part( 'template-parts/content', get_post_format() );
+endwhile;
+endif;
+?>
 </main>
-
+</div>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

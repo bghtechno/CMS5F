@@ -1,0 +1,9 @@
+maroon-elegant-theme/
+│ index.php
+│ style.css
+│ functions.php
+│ header.php
+│ footer.php
+│ sidebar.php
+└───template-parts/
+content.php
